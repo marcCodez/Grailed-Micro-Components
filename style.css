@@ -40,10 +40,11 @@ body {
 .search {
 	height: 2.3rem;
 	width: 29rem;
+	border: 0.1rem solid black;
 }
 .navbar {
 	display: flex;
-	padding-top: 3.8rem;
+	padding-top: 4.1rem;
 	align-items: center;
 	justify-content: center;
 	border-bottom: 0.1rem solid #eeeeee;
@@ -111,6 +112,7 @@ h3 {
 	height: 2.3rem;
 	width: 26rem;
 	margin-bottom: 1rem;
+	font-size: 0.9rem;
 }
 
 .description {
@@ -161,4 +163,34 @@ label {
 	grid-column: 1/3;
 	height: 4rem;
 	font-size: 1.5rem;
+}
+
+.footer {
+	display: flex;
+	padding: 2rem;
+	justify-content: flex-end;
+}
+
+.footer-links {
+	display: flex;
+	margin-right: auto;
+	font-size: 0.8rem;
+	align-items: center;
+}
+.footer-links a,
+.footer-socials a,
+.footer-socials p {
+	margin-right: 0.8rem;
+	margin-left: 0.8rem;
+	text-decoration: none;
+	color: black;
+}
+
+.footer-socials {
+	display: flex;
+	align-items: center;
+}
+
+.copyright {
+	font-size: 0.8rem;
 }
