@@ -159,6 +159,51 @@ label {
 	font-weight: 580;
 }
 
+.country,
+.second-col {
+	display: flex;
+	justify-content: flex-end;
+
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	width: 26rem;
+	border-bottom: 0.1rem solid #eeeeee;
+
+	/* width: 26rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	border-bottom: 0.1rem solid #eeeeee; */
+}
+
+.second-col {
+	/* moves second column to the end of the grid */
+	justify-self: end;
+}
+
+.country label,
+.second-col label {
+	margin-right: auto;
+	align-self: center;
+}
+
+input[type="checkbox"] {
+	width: 2rem;
+	height: 2rem;
+}
+
+/* .country input {
+	height: 2.3rem;
+	margin-left: 3rem;
+} */
+
+/* .second-col {
+	display: flex;
+	justify-content: flex-end;
+	border-bottom: 0.1rem solid #eeeeee;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+} */
+
 .publish {
 	grid-column: 1/3;
 	height: 4rem;
@@ -167,7 +212,8 @@ label {
 
 .footer {
 	display: flex;
-	padding: 2rem;
+	padding-top: 2.5rem;
+	padding-bottom: 1.6rem;
 	justify-content: flex-end;
 }
 
