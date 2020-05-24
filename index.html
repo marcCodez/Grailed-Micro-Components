@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Micro components</title>
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="first">
+				<img src="grailed.png" alt="" class="logo" />
+				<form action="">
+					<input type="text" placeholder="Search" class="search" />
+					<button type="submit">SEARCH</button>
+				</form>
+			</div>
+			<div class="second">
+				<a href="">SHOP</a>
+				<a href="">SELL</a>
+				<a href="">READ</a>
+				<a href="">FOR YOU</a>
+				<a href="">♥️</a>
+			</div>
+		</header>
+		<nav class="navbar">
+			<a href="">DESIGNERS</a>
+			<a href="">BROWSE BY CATEGORY⬇</a>
+			<a href="">SNEAKERS</a>
+			<a href="">FOOTWEAR</a>
+			<a href="">TOPS</a>
+			<a href="">OUTERWEAR</a>
+			<a href="">STAFF PICKS</a>
+			<a href="">COLLECTIONS</a>
+			<a href="">WOMENSWEAR</a>
+		</nav>
+		<!-- <div class="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div> -->
+
+		<form class="addListing">
+			<h2 class="add-heading">Add a new listing</h2>
+			<h3 class="details-heading">DETAILS</h3>
+
+			<select class="category" name="Select category">
+				<option value="cat0">Select Category</option>
+				<option value="cat1">Tops</option>
+				<option value="cat2">Bottoms</option>
+				<option value="cat3">Outerwear</option>
+				<option value="cat4">Footwear</option>
+				<option value="cat5">Tailoring</option>
+				<option value="car6">Accessories</option>
+			</select>
+			<input type="text" placeholder="Item name" />
+			<select id="designer" name="Select designer">
+				<option value="des0">Select Designer</option>
+				<option value="des1">Nike</option>
+				<option value="des2">Off-White</option>
+				<option value="des3">Givenchy</option>
+				<option value="des4">Adidas</option>
+				<option value="des5">Champion</option>
+			</select>
+			<input type="text" placeholder="Enter Size" />
+			<div class="note">
+				<p class="note">
+					<em
+						><strong>Please select a designer from the drop down.</strong>
+						Please email<br />
+						help@grailed.com if the designer you are trying to add does not<br />
+						exist</em
+					>
+				</p>
+			</div>
+
+			<h3>COLOR</h3>
+			<input type="text" placeholder="Designer color name, i.e.Frozen Yellow" />
+			<h3>CONDITION</h3>
+			<select name="select condition" id="condition">
+				<option value="none"></option>
+				<option value="new">New/Never Worn</option>
+				<option value="gently">Gently Used</option>
+				<option value="used">Used</option>
+				<option value="very worn">Very Worn</option>
+			</select>
+			<h3>DESCRIPTION</h3>
+			<input
+				id="description"
+				type="text"
+				placeholder="Retail Price, Condition, Measurements, Shipping Policy, Link to Retail Page, etc"
+			/>
+			<div class="payment-heading">
+				<h3 id="payment">PAYMENT</h3>
+				<h6 class="tips">Pricing tips --></h6>
+			</div>
+
+			<input class="price" type="number" placeholder="Price (USD)" />
+
+			<div class="shipping-heading">
+				<h3>SHIPPING</h3>
+				<h6>Shipping tips --></h6>
+			</div>
+
+			<p>
+				Shipping costs are dependent on the service used as well as the
+				size/weight of the package and the destination. Most services have an
+				online tool for calculating the shipping costs in advance. Once a buyer
+				has paid, it is the seller's responsibility to complete and pay for the
+				shipment.
+			</p>
+			<div class="us">
+				<label for="U.S">United States</label>
+				<input type="text" placeholder="20" />
+				<input type="checkbox" />
+			</div>
+			<div class="canada">
+				<label for="canada">Canada</label>
+				<input type="text" placeholder="20" />
+				<input type="checkbox" />
+			</div>
+			<div class="uk">
+				<label for="UK">United Kingdom</label>
+				<input type="text" placeholder="30" />
+				<input type="checkbox" />
+			</div>
+			<div class="europe">
+				<label for="europe">Europe</label>
+				<input type="text" placeholder="30" />
+				<input type="checkbox" />
+			</div>
+			<div class="aus">
+				<label for="aus/nz">Australia/NZ</label>
+				<input type="text" placeholder="10" />
+				<input type="checkbox" />
+			</div>
+			<div class="asia">
+				<label for="asia">Asia</label>
+				<input type="text" placeholder="20" />
+				<input type="checkbox" />
+			</div>
+			<div class="other">
+				<label for="other">Other</label>
+				<input type="text" placeholder="25" />
+				<input type="checkbox" />
+			</div>
+
+			<h3>PHOTOS</h3>
+			<button class="publish" type="submit">PUBLISH</button>
+		</form>
+
+		<footer>
+			<a href="">ABOUT</a>
+			<a href="">HELP & FAQ</a>
+			<a href="">TERMS</a>
+			<a href="">ACCESSIBILITY</a>
+			<a href="">JOBS</a>
+			<a href="">IOS APP</a>
+			<a href="">ANDROID APP</a>
+		</footer>
+	</body>
+</html>
