@@ -46,10 +46,14 @@
 		</div> -->
 
 		<form class="addListing">
-			<h2 class="add-heading">Add a new listing</h2>
-			<h3 class="details-heading">DETAILS</h3>
+			<h2 class="add-heading" id="heading-one">Add a new listing</h2>
+			<h3 class="details-heading" id="heading-two">DETAILS</h3>
 
-			<select class="category form-select" name="Select category">
+			<select
+				class="category form-select"
+				id="categories"
+				name="Select category"
+			>
 				<option value="cat0">Select Category</option>
 				<option value="cat1">Tops</option>
 				<option value="cat2">Bottoms</option>
@@ -60,11 +64,12 @@
 			</select>
 			<input
 				class="form-input item-name form-end"
+				id="name-item"
 				type="text"
 				placeholder="Item name"
 				required
 			/>
-			<select class="form-select" name="Select designer">
+			<select class="form-select" id="des-select" name="Select designer">
 				<option value="des0">Select Designer</option>
 				<option value="des1">Nike</option>
 				<option value="des2">Off-White</option>
@@ -74,10 +79,11 @@
 			</select>
 			<input
 				class="form-input item-size form-end"
+				id="enter-size"
 				type="text"
 				placeholder="Enter Size"
 			/>
-			<div class="note">
+			<div class="note" id="des-note">
 				<p class="note">
 					<em
 						><strong>Please select a designer from the drop down.</strong>
@@ -88,23 +94,30 @@
 				</p>
 			</div>
 
-			<h3>COLOR</h3>
+			<h3 id="color">COLOR</h3>
 			<input
+				id="des-color"
 				class="form-input form-start"
 				type="text"
 				placeholder='Designer color name, i.e."Frozen Yellow"'
 			/>
-			<h3>CONDITION</h3>
-			<select class="form-select" name="select condition" id="condition">
+			<h3 id="condition">CONDITION</h3>
+			<select
+				class="form-select"
+				id="conditio-select"
+				name="select condition"
+				id="condition"
+			>
 				<option value="none"></option>
 				<option value="new">New/Never Worn</option>
 				<option value="gently">Gently Used</option>
 				<option value="used">Used</option>
 				<option value="very worn">Very Worn</option>
 			</select>
-			<h3>DESCRIPTION</h3>
+			<h3 id="desc">DESCRIPTION</h3>
 
 			<textarea
+				id="input-desc"
 				class="description"
 				placeholder="Retail Price, Condition, Measurements, Shipping Policy, Link to Retail Page, etc"
 			></textarea>
@@ -112,6 +125,7 @@
 			<h5 id="tips"><a href="">Pricing tips --></a></h5>
 
 			<input
+				id="input-price"
 				class="price form-input form-start"
 				type="number"
 				placeholder="Price (USD)"
@@ -122,7 +136,7 @@
 				<a href="">Shipping tips --></a>
 			</h5>
 
-			<p class="shipping-desc">
+			<p class="shipping-desc" id="ship-desc">
 				Shipping costs are dependent on the service used as well as the
 				size/weight of the package and the destination. Most services have an
 				online tool for calculating the shipping costs in advance. Once a buyer
