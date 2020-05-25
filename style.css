@@ -229,7 +229,7 @@ input[type="checkbox"] {
 }
 
 .top-row {
-	justify-self: right;
+	justify-self: end;
 }
 
 .bottom-row {
@@ -272,4 +272,53 @@ input[type="checkbox"] {
 
 .copyright {
 	font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+	.addListing {
+		display: flex;
+		flex-direction: column;
+		/* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"heading-one"
+			"heading-two"
+			"categories"
+			"name-item"
+			"des-select"
+			"enter-size"
+			"des-note"
+			"color"
+			"des-color"
+			"condition"
+			"condition-select"
+			"desc"
+			"input-desc"
+			"payment"
+			"tips"
+			"input-price"
+			"shipping"
+			"ship-tips"
+			"ship-desc";
+		background-color: pink; */
+	}
+
+	/* h3,
+	.item-name,
+	.item-size,
+	.note,
+	select,
+	.form-input,
+	.description,
+	#payment,
+	#shipping,
+	.price,
+	#tips,
+	#ship-tips,
+	.shipping-desc,
+	.country,
+	.publish {
+		grid-column: auto;
+		grid-row: auto;
+	} */
 }
