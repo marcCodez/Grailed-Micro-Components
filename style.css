@@ -32,9 +32,10 @@ body {
 }
 
 .logo {
-	height: 1.4rem;
-	width: 9rem;
+	height: 0.9rem;
+	width: 7.5rem;
 	margin-right: 1.5rem;
+	align-self: center;
 }
 
 .flex-container {
