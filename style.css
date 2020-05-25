@@ -37,11 +37,19 @@ body {
 	margin-right: 1.5rem;
 }
 
-.search {
+.flex-container {
+	display: flex;
+}
+
+.search-input {
+	flex: 1;
 	height: 2.3rem;
 	width: 29rem;
 	border: 0.1rem solid black;
+	font-size: 0.9rem;
+	padding: 1rem;
 }
+
 .navbar {
 	display: flex;
 	padding-top: 4.1rem;
@@ -113,12 +121,13 @@ h3 {
 	width: 26rem;
 	margin-bottom: 1rem;
 	font-size: 0.9rem;
+	padding: 1rem;
 }
 
 .description {
 	grid-column: 1/3;
 	height: 9rem;
-	padding: 1.5rem;
+	padding: 1rem;
 	font-size: 0.9rem;
 }
 
@@ -163,7 +172,7 @@ label {
 .second-col {
 	display: flex;
 	justify-content: flex-end;
-
+	align-content: center;
 	padding-bottom: 1rem;
 	padding-top: 1rem;
 	width: 26rem;
@@ -173,6 +182,12 @@ label {
 	padding-bottom: 1rem;
 	padding-top: 1rem;
 	border-bottom: 0.1rem solid #eeeeee; */
+}
+
+.country input,
+.second-col input {
+	font-size: 0.9rem;
+	padding: 1rem;
 }
 
 .second-col {
@@ -274,51 +289,46 @@ input[type="checkbox"] {
 	font-size: 0.8rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 70rem) {
 	.addListing {
 		display: flex;
 		flex-direction: column;
-		/* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-template-columns: 1fr;
-		grid-template-areas:
-			"heading-one"
-			"heading-two"
-			"categories"
-			"name-item"
-			"des-select"
-			"enter-size"
-			"des-note"
-			"color"
-			"des-color"
-			"condition"
-			"condition-select"
-			"desc"
-			"input-desc"
-			"payment"
-			"tips"
-			"input-price"
-			"shipping"
-			"ship-tips"
-			"ship-desc";
-		background-color: pink; */
+	}
+	.header {
+		display: flex;
+		flex-direction: column;
 	}
 
-	/* h3,
-	.item-name,
-	.item-size,
-	.note,
-	select,
-	.form-input,
-	.description,
-	#payment,
-	#shipping,
-	.price,
-	#tips,
-	#ship-tips,
-	.shipping-desc,
-	.country,
-	.publish {
-		grid-column: auto;
-		grid-row: auto;
-	} */
+	.navbar {
+		display: flex;
+		flex-direction: column;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.shipping-desc {
+		padding-left: 6rem;
+		padding-right: 6rem;
+	}
+
+	.orig-grid {
+		padding-left: 6rem;
+		padding-right: 6rem;
+	}
+
+	.second {
+		padding-top: 1rem;
+	}
+	.orig-grid {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.flex-container {
+		padding-left: 6rem;
+		padding-right: 6rem;
+	}
 }
